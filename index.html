@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Media Player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="progress_Toolbar hiddenProgress">
+            <div class="progress"></div>
+        </div>
+        <div class="videoClass">
+            <video src="video/6717705bb678314bd2ec20efe98c96ea14443348-720p.mp4"></video>
+        </div>
+        <div class="controls hiddenContorlBar">
+
+            <div class="btn-play" onclick="play()">
+                <img class="fas fa-play" src="icons/play-button.png" alt="play"></img>
+            </div>
+            <div class="btn forward-btn" onclick="seekButton(1)">
+                <img class="button fas fa-forward" src="icons/front.png" alt="forward-play"></img>
+            </div>
+            <div class="btn backward-btn" onclick="seekButton(-1)">
+                <img class="button fas fa-backward" src="icons/back.png" alt="arrow-back"></img>
+            </div>
+            <div id="volumeBtn" class="btn valume-btn">
+                <img class="button fas fa-volume" src="icons/volume.png" alt="volume"></img>
+            </div>
+            <div class="btn btn-full-screen" onclick="full_screen()">
+                <img class="button fas fa-expand" src="icons/full-screen.png" alt="full-screen"></img>
+            </div>
+            <div class="v-show hidden">
+                <div class="v-show-volume hidden">100%</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
